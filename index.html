@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreboard App</title>
+</head>
+<body>
+    <div class="main">
+        <div class="home">
+            <h1>home</h1>
+            <div id="homescore" class="scorebin timerfont">
+                0
+            </div>
+            <div class="button-cont">
+                <button id="homeplusOne" class="btns timerfont">+1</button>
+                <button id="homeplusTwo" class="btns timerfont">+2</button>
+                <button id="homeplusThree" class="btns timerfont">+3</button>
+                <button id="homeminusOne" class="btns timerfont">-1</button>
+            </div>
+        </div>
+        <div class="gamecontrols timerfont">
+            <div id="clock" >15.00</div>
+            <button id="start" class="gamecontrols-btns timerfont">Start</button>
+            <button id="pause" class="gamecontrols-btns timerfont">Pause</button>
+            <button id="reset" onclick="reset()" class="gamecontrols-btns timerfont">Reset</button>
+        </div>
+        <div class="guest">
+            <h1>guest</h1>
+            <span id="guestscore" class="scorebin timerfont">
+                0
+            </span>
+            <div class="button-cont">
+                <button id="guestplusOne" class="btns timerfont" >+1</button>
+                <button id="guestplusTwo" class="btns timerfont">+2</button>
+                <button id="guestplusThree" class="btns timerfont">+3</button>
+                <button id="guestminusOne" class="btns timerfont">-1</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

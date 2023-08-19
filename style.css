@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+}
+
+.main{
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    background-color: #1B244A;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-radius: 5px;
+    place-items: center;
+}
+
+h1{
+    color: #EEEEEE;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bolder;
+    font-size: 2ch;
+    text-align: center;
+    letter-spacing: 0.4%;
+}
+
+.scorebin{
+    background-color: #080001;
+    width: 100%;
+    text-align: center;
+    color: #f94f6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100%;
+    font-size: 5ch;
+    height: 7vh;
+    padding-top: 0.3rem;
+    border-radius: 5px;
+}
+
+#clock{
+    background-color: #080001;
+    color: #f94f6d;
+    text-align: center;
+    font-size: 4vw;
+    width: 15vw;
+    line-height: 10vh;
+    /* justify-content: center; */
+}
+
+.gamecontrols{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin: auto 3vw; */
+    padding-bottom: 1rem;
+}
+
+.gamecontrols-btns{
+    background: none;
+    color: #9AABD8;
+    font-size: 2vw;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 3px 7px;
+    cursor: pointer;
+    margin: 1vh;  
+}
+
+.timerfont{
+    font-family: 'Cursed Timer ULiL', sans-serif;
+}
+
+.button-cont{
+    width: 100%;
+    height: 3vw;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.btns{
+    background: none;
+    color: #9AABD8;
+    font-size: 2vw;
+    width: 4vw;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 1%;
+}
+
+.leader{
+    color: green;
+}
+
+
+@media screen and (max-width: 489px) {
+    .button-cont{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .btns{
+        width: 9vw;
+        margin-bottom: 1vh;
+        margin-right: 1vw;
+        font-size: 5vw;
+    }
+
+    .gamecontrols-btns{
+        background: none;
+        color: #9AABD8;
+        font-size: 4vw;
+        border: 2px solid;
+        border-radius: 5px;
+        padding: 3px 7px;
+        cursor: pointer;
+        margin: 1vh;  
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .button-cont{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .btns{
+        width: 9vw;
+        margin-bottom: 1vh;
+        margin-right: 1vw;
+        font-size: 5vw;
+    }
+
+    .gamecontrols-btns{
+        width: 13vw;
+        font-size: 3vw;
+        height: 7vh;
+    }
+
+
+    @media screen and (max-width: 375px) {
+
+        .main{
+            height: 70vh;
+        }
+    
+        .button-cont{
+            display: grid;
+            justify-content: center;  
+        }
+    
+        .btns{
+            width: 9vw;
+            font-size: 4vw;
+            height: 9vw;
+            margin-bottom: 1vh;
+            padding: auto 4px;
+        }
+    
+        .gamecontrols-btns{
+            font-size: 4vw;
+            border: 2px solid;
+            border-radius: 5px;
+            padding: 3px 7px;
+            cursor: pointer;
+            margin: 1vh;
+            width: 19vw;  
+        }
+    }
+
+}
