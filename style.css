@@ -3,8 +3,8 @@
 }
 
 .main{
-    width: 80vw;
-    height: 50vh;
+    width: 90vw;
+    height: 90vh;
     margin: auto;
     background-color: #1B244A;
     display: grid;
@@ -96,9 +96,7 @@ h1{
 
 
 @media screen and (max-width: 489px) {
-    .main{
-        height: 90vh;
-    }
+
     .button-cont{
         display: grid;
         justify-content: center;
@@ -147,10 +145,6 @@ h1{
 
 
     @media screen and (max-width: 375px) {
-
-        .main{
-            height: 70vh;
-        }
     
         .button-cont{
             display: grid;
